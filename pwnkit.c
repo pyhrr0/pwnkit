@@ -89,7 +89,7 @@ void get_shell() {
 
 int main(int argc, char *argv[]) {
     if (pkexec_installed() < 0)
-        die("Failed to find executable pkexec binary in PATH");
+        die("Failed to find executable pkexec binary");
 
     setup_preconditions();
     get_shell();
